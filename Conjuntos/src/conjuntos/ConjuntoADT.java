@@ -5,6 +5,7 @@
 package conjuntos;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -95,6 +96,13 @@ public class ConjuntoADT<T> {
     @Override
     public String toString() {
         return "ConjuntoADT{" + "conjunto1=" + conjunto1 + '}';
+    }
+    
+    public void iterator() {
+       Iterator iterador = conjunto1.iterator();
+        while (iterador.hasNext()) {            
+            iterador.next();
+        }
     }
 
 }
